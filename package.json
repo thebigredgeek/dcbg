@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "bin": {
-    "dcbg": "./index"
+    "dcbg": "./index.js"
   },
   "engines": {
     "node": ">=4.2.0"

@@ -18,27 +18,27 @@ Usage:
 }
 
 function errUser () {
-  process.stderr.write('ERROR: --user parameter must be used to specify a docker cloud username');
+  process.stderr.write('ERROR: --user parameter must be used to specify a docker cloud username\n');
   process.exit(1);
 }
 
 function errToken () {
-  process.stderr.write('ERROR: --token parameter must be used to specify a docker cloud API token matched with --user');
+  process.stderr.write('ERROR: --token parameter must be used to specify a docker cloud API token matched with --user\n');
   process.exit(1);
 }
 
 function errTarget () {
-  process.stderr.write('ERROR: --target parameter must be used to specify the intended target in the format of [service].[stack]');
+  process.stderr.write('ERROR: --target parameter must be used to specify the intended target in the format of [service].[stack]\n');
   process.exit(1);
 }
 
 function errOptions () {
-  process.stderr.write('ERROR: --options parameter use requires exactly two options delimited by a comma');
+  process.stderr.write('ERROR: --options parameter use requires exactly two options delimited by a comma\n');
   process.exit(1);
 }
 
 function errLb () {
-  process.stderr.write('ERROR: --lb parameter must be used to specify the service load balancer')
+  process.stderr.write('ERROR: --lb parameter must be used to specify the service load balancer\n')
   process.exit(1);
 }
 
@@ -99,6 +99,8 @@ function getAlternateCode () {
 }
 
 function main () {
+
+  if (Object.keys(args).length < 3) return help();
 
   if (args.help) return help();
 
