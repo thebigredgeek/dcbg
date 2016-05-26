@@ -1,0 +1,40 @@
+{
+  "name": "dcbg",
+  "version": "1.0.0",
+  "description": "Simple command line tool to resolve the next active target code for blue/green deployments on docker cloud — Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "dcbg": "./index"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebigredgeek/dcbg.git"
+  },
+  "keywords": [
+    "cloud",
+    "docker",
+    "deployment",
+    "ops"
+  ],
+  "author": "Andrew E. Rhyne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebigredgeek/dcbg/issues"
+  },
+  "homepage": "https://github.com/thebigredgeek/dcbg#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "axios": "^0.11.1",
+    "yargs": "^4.7.1"
+  }
+}
